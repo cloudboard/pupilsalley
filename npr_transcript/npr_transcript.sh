@@ -8,5 +8,5 @@ if [ -f "/home/zghong/.servant/npr_transcript/data/$today.json" ]; then
     cp npr_transcript/data/$today.json npr_transcript/data/latest.json
     git add .
     git commit -m "npr_transcript: $today"
-    GIT_SSH_COMMAND="ssh -i ~/.ssh/id_cloudboard" git push
+    GIT_SSH_COMMAND="ssh -i ~/.ssh/id_cloudboard" git push > /dev/null
 fi
